@@ -20,6 +20,7 @@ y_pred = model.predict(X_test)
 
 accuracy = accuracy_score(y_test,y_pred)
 
+st.balloons() #displays a fun animation of balloons on the screen.
 
 #Streamlit app
 st.title('Iris Dataset Classification')
