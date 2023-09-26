@@ -5,10 +5,10 @@ import pandas as pd
 import altair as alt
 
 #histogram
-# rand=np.random.normal(1, 2, size=20)
-# fig, ax = plt.subplots()
-# ax.hist(rand, bins=15,color="purple")
-# st.pyplot(fig)
+rand=np.random.normal(1, 2, size=20)
+fig, ax = plt.subplots()
+ax.hist(rand, bins=15,color="purple")
+st.pyplot(fig)
 
 
 
