@@ -38,3 +38,7 @@ if st.button('Predict'):
     prediction = model.predict(user_input)
     species = iris.target_names[prediction][0]
     st.write(f'The Predicted species is : {species}')
+
+    if species == "setosa": st.image("iris_setosa.png")
+    elif species == "versicolor": st.image("iris_versicolor.png")
+    elif species == "virginica": st.image("iris_virginica.png")
