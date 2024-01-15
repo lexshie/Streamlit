@@ -57,3 +57,6 @@ st.graphviz_chart('''
 df = pd.DataFrame(np.random.randn(100, 2) / [50, 50] + [14.5, 121],columns=['lat', 'lon'])
 
 st.map(df)
+
+
+st.balloons() #displays a fun animation of balloons on the screen.
