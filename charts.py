@@ -4,7 +4,10 @@ import numpy as np
 import pandas as pd
 import altair as alt
 
+
+
 #histogram
+st.title('Histogram')
 rand=np.random.normal(1, 2, size=20)
 fig, ax = plt.subplots()
 ax.hist(rand, bins=15,color="purple")
@@ -13,6 +16,7 @@ st.pyplot(fig)
 
 
 #line chart
+st.title('Line Chart')
 df= pd.DataFrame(
     np.random.randn(10, 2)
     ,columns=['x', 'y'])
@@ -21,17 +25,20 @@ st.line_chart(df, color= ['#845EC2', '#D65DB1'])
 
 
 #bar chart
+st.title('Bar Chart')
 st.bar_chart(df, color= ['#845EC2', '#D65DB1'])
 
 
 
 #area chart
+st.title('Area Chart')
 st.area_chart(df, color= ['#845EC2', '#D65DB1'])
 
 
 
 
 #altair
+st.title('Altair Chart')
 df = pd.DataFrame(np.random.randn(500, 3),columns=['x','y','z'])
 c = alt.Chart(df).mark_circle().encode(x='x',y='y' , size='z', color='z', tooltip=['x', 'y', 'z'])
 st.altair_chart(c, use_container_width=True)
@@ -39,6 +46,7 @@ st.altair_chart(c, use_container_width=True)
 
 
 #diagram?
+st.title('Diagram?')
 import streamlit as st
 import graphviz as graphviz
 st.graphviz_chart('''
@@ -52,6 +60,7 @@ st.graphviz_chart('''
 
 
 #maps
+st.title('Maps')
 # df = pd.DataFrame(np.random.randn(500, 2) / [50, 50] + [37.76, -122.4],columns=['lat', 'lon'])
 # df = pd.DataFrame(np.random.randn(100, 2) / [1, 1] + [10, 117],columns=['lat', 'lon'])
 df = pd.DataFrame(np.random.randn(100, 2) / [50, 50] + [14.5, 121],columns=['lat', 'lon'])
